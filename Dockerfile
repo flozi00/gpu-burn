@@ -7,7 +7,7 @@ WORKDIR /build
 
 COPY . /build/
 
-RUN make COMPUTE="5.0 6.0 6.1 7.0 7.5 8.0 8.6 8.9 9.0"
+RUN make COMPUTE="9.0"
 
 FROM nvidia/cuda:${CUDA_VERSION}-runtime-${IMAGE_DISTRO}
 
