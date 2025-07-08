@@ -9,6 +9,6 @@ COPY . /build/
 
 RUN make COMPUTE="8.9"
 
-WORKDIR /app
+WORKDIR /build
 
 CMD ["./gpu_burn", "120", "-m", "90%"]
